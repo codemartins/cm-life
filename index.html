@@ -4,39 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMLife - Home</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=
+    Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;
+    0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
 </head>
 <body>
-    <header>
-        <div>
-            <div>
+    <header class="topo">
+        <div class="container">
+            <div class="topo-titulo">
                 <a href="index.html">
-                  <img src="assets/logo.png" alt="Clínica Médica" title="Clínica Média Life">  
+                  <img class="logo-topo" src="assets/logo.png" alt="Clínica Médica" title="Clínica Média Life">  
                 </a>
             </div>
 
-            <nav>
+            <nav class="topo-links">
                 <a href="#sobre">Sobre</a>
-                <a href="#especialidades">Especialidades</a>
+                <a href="#">Especialidades</a>
                 <a href="#contato">Contato</a>
             </nav>    
         </div>        
     </header>
 
     <main>
-        <section>
-            <div>
+        <section class="box-visao-geral">
+            <div class="box-visao-geral-titulo container">
                 <h1>Clínica Médica Life<br>Aqui a gente cuida de você</h1>
             </div>
         </section>
 
-        <section id="sobre">
-            <div>
+        <section id="sobre" clas="secao-sobre container">
+            <div class="container-conteudo">
                 <h2>Sobre à Clínica</h2>
                 <p>Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, 
                     comodidade e com a segurança de que você precisa.</p>
             </div>
 
-            <div>
+            <div class="box-sobre">
                 <img src="assets/medico.jpg" alt="Imagem de um médico" title="Imagem de um médico">
                 <div>
                     <h3>Aqui na nossa clínica você vai encontrar:</h3>
@@ -52,51 +57,51 @@
             </div>
         </section>
 
-        <section id="especialidades">
-            <div>
+        <section id="especialidades" class="secao-especialidades container">
+            <div class="container-conteudo">
                 <h3>Uma Clínica de multiespecialidades</h3>
                 <p>Nossa Clínica possui diversas especialidades. Como Ortopedia, Pediatria, Geriatria, Psicologia, Fisioterapia e outros.</p>
             </div>
 
-            <div>
-                <figure>
+            <div class="box-especialidades">
+                <figure class="box-especialidades">
                     <img src="assets/ortopedia1.png" alt="Imagem de um Ortopedista" title="Imagem de um Ortopedista">
                     <figcaption>Ortopedia</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="box-especialidades">
                     <img src="assets/pediatra.png" alt="Imagem de uma Pediatra" title="Imagem de uma Pediatra">
                     <figcaption>Pediatria</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="box-especialidades">
                     <img src="assets/geriatra.png" alt="Imagem de uma geriatra" title="Imagem de uma Geriatra">
                     <figcaption>Geriatria</figcaption>
                 </figure>
             </div>
 
-            <div>
-                <a href="especialidades.html">Ver Horários</a>
+            <div class="box-link-horarios">
+                <a class="link-horarios" href="especialidades.html">Ver Horários</a>
             </div>
         </section>
 
-        <section id="contato">
-            <div>
+        <section id="contato" class="secao-contato container">
+            <div class="container-conteudo">
                 <h3>Contato</h3>
                 <p>Nossa Clínica Médica está aberta de <strong>Segunda à Sábado das 6:00 às 21:00.</strong></p>
                 <p>Através do telefone/WhatsApp <strong>(21) 99966-5555</strong> você pode fazer o agendamento de consultas e exames.</p>
                 <p>Estamos localizados no estacionamento do Via Parque Shopping <strong> Av. Ayrton Senna, 300 - Barra da Tijuca, Rio de Janeiro.</strong> </p>
             </div>
 
-            <div>
+            <div class="container-rota">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14692.471710812997!2d-43.3641911!3d-22.9826906!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1612707978931!5m2!1spt-BR!2sbr" width="100%" heigth="350" frameborder="0" style="border:0" allowfullscreen></iframe> 
             </div>
         </section>
     </main>
 
     <footer>
-        <div>
-            <img src="assets/logo.png" alt="Clínica Médica" title="Clínica Médica Life">
+        <div class="container">
+            <img class="logo-topo" src="assets/logo.png" alt="Clínica Médica" title="Clínica Médica Life">
 
             <p>
                 Telefone e WhatsApp: (21) 99966-5555
@@ -107,6 +112,7 @@
             </p>
 
             <p>&copy;2020 Clínica Médica Life - Todos os direitos reservados</p>
+            <p>Desenvolvida por: <strong> <a href="https://linktr.ee/germartinss" target="_blank">Germeson Martins</a></strong></p>
         </div>
     </footer>    
 </body>
