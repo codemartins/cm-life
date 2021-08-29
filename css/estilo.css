@@ -21,7 +21,7 @@ main {
 }
 
 .container-conteudo {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto;
     text-align: center;
 }
@@ -176,4 +176,33 @@ footer .container {
     text-transform:  uppercase;
     padding: 10px 20px;
     text-decoration: none;
+}
+
+.link-horarios:hover {
+    background-color: #004b4c;
+}
+
+/*Media Query*/
+@media (max-width: 425px) {
+    .box-visao-geral {height: 200px;}
+    .box-visao-geral h1 {font-size: 28px}
+    .box-especialidade {width: 100%}
+    .topo .container {flex-direction: column;}
+    .topo-titulo {margin: 10px 0; }
+    .topo-links {width: 100%;
+    border-top: 1px solid #009fa5;
+    justify-content: space-around;}
+}
+
+@media (max-width: 768px) {
+    .box-visao-geral {height: 300px;}
+    .box-sobre img {display: none;}
+    .box-especialidades  {justify-content: center;}
+    .box-especialidade {
+        width: calc(100%/2-40px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .box-visao-geral {height: 400px;}
 }
