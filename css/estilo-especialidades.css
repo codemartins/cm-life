@@ -1,0 +1,173 @@
+/*Estilos Gerais*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/*Início CSS Topo*/
+.topo {
+    background-color: #00cad1;
+    width: 100%;
+}
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.topo-titulo a {
+    font-weight: 600;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topo-titulo a {
+    display: flex;
+}
+
+.topo-logo {
+    height: 60px;
+}
+
+.topo-links {
+    display: flex;
+}
+
+.topo-links a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.topo-links a:hover {
+    color: #004b4c;
+}
+/*Fim CSS Topo*/
+
+
+/*Início CSS Rodapé*/
+footer {
+    background-color: #0d6e71;
+    color: #fff;
+    padding: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #004b4c;
+}
+footer .container {
+    text-align: center;
+}
+/*Fim CSS Rodapé*/
+
+#sobre,
+#especialidades,
+#contato {
+    padding: 40px 20px 0;
+}
+
+
+
+
+
+.box-sobre h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.box-sobre img {
+    height: 250px;
+}
+
+.box-especialidades {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-especialidade {
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0/ 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+
+.box-especialidade img {
+    width: 100%;
+}
+
+.box-especialidade figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.box-link-horarios {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-horarios {
+    background-color: #00cad1;
+    color: #fff;
+    font-weight: 600;
+    text-transform:  uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.link-horarios:hover {
+    background-color: #004b4c;
+}
+
+/*Media Query*/
+@media (max-width: 425px) {
+    .box-visao-geral {height: 200px;}
+    .box-visao-geral h1 {font-size: 28px}
+    .box-especialidade {width: 100%}
+    .topo .container {flex-direction: column;}
+    .topo-titulo {margin: 10px 0; }
+    .topo-links {width: 100%;
+    border-top: 1px solid #009fa5;
+    justify-content: space-around;}
+}
+
+@media (max-width: 768px) {
+    .box-visao-geral {height: 300px;}
+    .box-sobre img {display: none;}
+    .box-especialidades  {justify-content: center;}
+    .box-especialidade {
+        width: calc(100%/2-40px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .box-visao-geral {height: 400px;}
+}
